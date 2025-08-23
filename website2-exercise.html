@@ -1,0 +1,35 @@
+<style>
+  .increase{
+    background-color:green;
+    color:white;
+    transition: transform 1s ease;
+    border:none;
+    margin:6px;
+    padding: 10px 20px;
+  }
+  .increase:hover{
+    padding:14px 30px;
+  }
+
+  .touch3d{
+    background-color: green;
+    color:white;
+    box-shadow: 0 6px 10px #808380;
+    border:none;
+    text-align:top;
+    padding: 10px 20px;
+  }
+  .touch3d:active{
+    transform: translateY(4px) scale(1.05);
+    box-shadow: 0 2px 10px #808380;
+  }
+</style>
+<button class="increase">
+  Stretch
+</button>
+<button class="touch3d">
+  Shadow
+</button>
+<button class="increase">One</button>
+<button class="increase">Two</button>
+<button class="increase">Three</button>
