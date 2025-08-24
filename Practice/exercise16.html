@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container{
+        margin:16px 10px;
+        box-shadow:5px 5px 10px rgba(0,0,0,0.20);
+        border-radius:5px;
+        padding:10px 18px;
+      }
+      .cat{
+        width:50px;
+        height:50px;
+        object-fit:cover;
+        object-position:center;
+        border-radius:50%;
+        display:inline-block;
+        vertical-align:middle;
+      }
+      .comments{
+        color:grey;
+        font-size:16px;
+        border:transparent;
+        width:550px;        
+      }
+      .tweet{
+        color:white;
+        font-weight:bold;
+        background-color:rgb(63, 165, 237);
+        border:0;
+        padding:10px 20px;
+        border-radius:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="cat" src="cat.jpg"/>
+      <input class="comments" type="text" placeholder="What's happening?" />
+      <button class="tweet">Tweet</button>
+    </div>
+  </body>
+</html>
