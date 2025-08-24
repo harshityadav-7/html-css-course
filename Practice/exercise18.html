@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suggestions</title>
+    <style>
+      .container{
+        display:inline-block;
+        margin-left:21px;
+        width:220px;
+        height:340px;
+        box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+      }
+      .cat{
+        width:220px;
+        height:200px;
+        object-fit:cover;
+        object-position:center;
+      }
+      .name{
+        color:black;
+        font-weight:bold;
+        font-size:18px;
+        margin-left:10px;
+      }
+      .mutuals{
+        color:grey;
+        font-size:16px;
+        margin-left:10px;
+      }
+      .add{
+        color:white;
+        background-color:rgb(55, 87, 202);
+        padding:10px 16px;
+        margin-left:10px;
+        border:0;
+        border-radius:4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="container">
+        <img class="cat" src="cat.jpg"/>
+        <p class="name">Oliver</p>
+        <p class="mutuals">2 mutual friends</p>
+        <button class="add">Add Friend</button>
+      </div>
+
+      <div class="container">
+        <img class="cat" src="cat2.jpg"/>
+        <p class="name">Mimi</p>
+        <p class="mutuals">3 mutual friends</p>
+        <button class="add">Add Friend</button>
+      </div>
+
+      <div class="container">
+        <img class="cat" src="dog.jpg"/>
+        <p class="name">Rex</p>
+        <p class="mutuals">4 mutual friends</p>
+        <button class="add">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>
