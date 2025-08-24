@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter box</title>
+    <style>
+      .container{
+        display:flex;
+        align-items:center;
+        gap:8px;
+      }
+      .cat{
+        width:40px;
+        height:40px;
+        object-fit:cover;
+        object-position:center;
+        border-radius:50%;
+      }
+      .text{
+        width:300px;
+        border-radius:8px;
+        font-size:16px;
+        text-align:top;
+        border:none;
+        outline:none;
+        background:transparent;
+      }
+      .tweet{
+        color:white;
+        background-color:rgb(60, 120, 233);
+        border:none;
+        font-weight:bold;
+        padding: 8px 16px;
+        border-radius:20px;
+        cursor:pointer;
+        transition:background-color 0.3s;
+      }
+      .tweet:hover{
+        background-color:rgb(28, 93, 212);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="cat" src="cat.jpg"/>
+      <input class="text" type="text" placeholder="What's happening" />
+      <button class="tweet">Tweet</button>
+    </div>
+  </body>
+</html>
