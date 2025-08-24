@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid 3 Practice</title>
+    <style>
+      .image{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        object-position: center;
+      }
+      .profile-pic{
+        width:30px;
+        height:30px;
+        object-fit: cover;
+        object-position: center;
+        border-radius:50%;
+        margin-left:4px;
+      }
+      .name{
+        font-weight:bold;
+        font-size:20px;
+        margin-bottom:1px;
+        margin-top:2px;
+        margin-left:4px;
+      }
+      .grid-box{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        column-gap:10px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+      }
+      .mutuals{
+        color:rgb(96, 96, 96);
+        margin:3px;
+        font-size:18px;
+      }
+      .profile-pict-mutuals{
+        display:grid;
+        grid-template-columns: 40px 1fr;
+      }
+      .add-button{
+        border:0;
+        color:white;
+        background-color:rgb(54, 113, 208);
+        padding:10px 16px;
+        border-radius:6px;
+        margin-left:4px;
+        cursor:pointer;
+        transition:shadow 0.2s ease
+      }
+      .add-button:hover{
+        box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+      }
+      .grid-box{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height:310px;
+        column-gap:15px;
+        box-shadow:5px 5px 5px rgba(0,0,0,0.15);
+        cursor:pointer;
+      }
+      .cards{
+        box-shadow:5px 5px 5px rgba(0,0,0,0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-box">
+      <div class="cards">
+        <div>
+          <img class="image" src="cat.jpg"/>
+          <div>
+            <p class="name">Oliver</p>
+          </div>
+          <div class="profile-pict-mutuals">
+            <div>
+              <img class="profile-pic" src="cat.jpg"/>
+            </div>
+            <p class="mutuals">2 mutuals friends</p>
+          </div>
+          <div class="add">
+            <button class="add-button">Add Friend</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="cards">
+          <img class="image" src="cat2.jpg"/>
+          <div>
+            <p class="name">Mimi</p>
+          </div>
+          <div class="profile-pict-mutuals">
+            <div>
+              <img class="profile-pic" src="cat2.jpg"/>
+            </div>
+            <p class="mutuals">3 mutuals friends</p>
+          </div>
+          <div class="add">
+            <button class="add-button">Add Friend</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <img class="image" src="dog.jpg"/>
+          <div>
+            <p class="name">Rex</p>
+          </div>
+          <div class="profile-pict-mutuals">
+            <div>
+              <img class="profile-pic" src="dog.jpg"/>
+            </div>
+            <p class="mutuals">4 mutuals friends</p>
+          </div>
+          <div class="add">
+            <button class="add-button">Add Friend</button>
+          </div>
+        </div>
+
+    </div>
+  </body>
+</html>
