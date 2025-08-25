@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instgram Suggestions</title>
+    <style>
+      .container1{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+      }
+      .container2{
+        display:flex;
+        flex-direction:row;
+        justify-content:start;
+        margin:8px 0px 4px 8px;
+      }
+      .image{
+        width:40px;
+        height:40px;
+        object-position:center;
+        border-radius:30px;
+      }
+      .info{
+        display:flex;
+        flex-direction:column;
+        justify-content:baseline;
+        
+      }
+      .name{
+        font-size:18px;
+        font-weight:bold;
+        margin:0 0 0 10px;
+      }
+      .breed{
+        color:gray;
+        font-size: 18px;
+        margin:3px 0 0 10px;
+      }
+      .pop{
+        font-size:14px;
+        color:gray;
+        margin:3px 0 0 10px;
+      }
+      .follow{
+        margin-top:17px;
+        margin-right:10px;
+        color:white;
+        font-size:16px;
+        background-color:rgb(66, 82, 228);
+        border:0;
+        border-radius:10px;
+        padding:0 20px;
+        height:38px;
+      }
+      .main-container{
+        border:2px rgb(223, 220, 220) solid;
+        border-radius:7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container1">
+        <div class="container2">
+          <img class="image" src="cat.jpg"/>
+          <div class="info">
+            <p class="name">oliver</p>
+            <p class="breed">the cat</p>
+            <p class="pop">Polular</p>
+          </div>
+        </div>
+        <button class="follow">Follow</button>
+      </div>
+
+      <div class="container1">
+        <div class="container2">
+          <img class="image" src="cat2.jpg"/>
+          <div class="info">
+            <p class="name">oliver</p>
+            <p class="breed">Sleepy Cat</p>
+            <p class="pop">Polular</p>
+          </div>
+        </div>
+        <button class="follow">Follow</button>
+      </div>
+
+      <div class="container1">
+        <div class="container2">
+          <img class="image" src="dog.jpg"/>
+          <div class="info">
+            <p class="name">Rex</p>
+            <p class="breed">Happy Dog</p>
+            <p class="pop">Polular</p>
+          </div>
+        </div>
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+  </body>
+</html>
