@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-container{
+        display:flex;
+        align-items:start;
+        height:120px;
+        width:100%;
+        border:1px gray solid;
+        padding:4px;
+      }
+      .first{
+        background-color:lightpink;
+        width:200px;
+        height:120px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .second{
+        display:flex;
+        flex:1;
+        height:120px;
+        align-items:center;
+        justify-content:space-between;
+        background-color:lightblue;
+      }
+      .left{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column;
+        gap:6px;
+      }
+      .row1{
+        color:black;
+        margin-left:3px;
+        font-size:26px;
+      }
+      .row2,.right{
+        color:white;
+        background-color:black;
+        width:54px;
+        height:32px;
+        margin-left:3px;
+        font-size:26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="first"></div>
+      <div class="second">
+        <div class="left">
+          <div class="row1">row1</div>
+          <div class="row2">row2</div>
+        </div>
+        <div class="right">right</div>
+      </div>
+    </div>
+  </body>
+</html>
