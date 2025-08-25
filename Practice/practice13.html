@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container{
+        position:relative;
+        width:350px;
+        background-color:gray;
+        margin:30px;
+      }
+      .shirt{
+        width:100%;
+        height:auto;
+        display:block;
+      }
+      .discount{
+        position:absolute;
+        top:10px;
+        right:0px;
+        color:white;
+        background-color:black;
+        padding:4px;
+        z-index:1;
+      }
+      .cart-button{
+        position:absolute;
+        bottom:0px;
+        height:100px;
+        width:100%;
+        background-color:rgba(43, 49, 31, 0.768);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .cart-button button{
+        padding:8px 16px;
+        font-size:13px;
+        border:1px black solid;
+        background-color:white;
+      }
+      .main-container{
+        padding:25px 25px;
+        width:415px;
+        height:540px;
+        background-color:gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <img class="shirt" src="Calik enerji.jpg"/>
+        <div class="discount">20% OFF</div>
+        <div class="cart-button">
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
