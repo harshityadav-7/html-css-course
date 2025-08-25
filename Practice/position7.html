@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .left-part{
+        position:fixed;
+        background-color:rgb(37, 36, 36);
+        left:0px;
+        top:0px;
+        bottom:0px;
+        width:100px;
+      }
+      .cat{
+        padding:20px;
+        width:60px;
+        height:60px;
+        object-fit:cover;
+        object-position:center;
+        border-radius:50%;
+      }
+
+
+      .mid-part{
+        position:fixed;
+        top:0;
+        bottom:0;
+        left:100px;
+        background-color:rgb(114, 114, 114);
+        width:300px;
+        padding-bottom:0;
+      }
+      .to-flex{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding-left:10px;
+        padding-right:10px;
+      }
+      .info{
+        color:rgb(242, 239, 239);
+        margin-left:15px;
+        
+      }
+      .plus-sign{
+        color:rgb(205, 204, 204);
+        font-size:24px;
+        font-weight:bold;
+        margin-top:10px;
+      }
+      .hash{
+        margin-top:0px;
+        padding:0 10px 10px 20px;
+        color:rgb(205, 204, 204);
+        font-size:16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-part">
+      <div>
+        <img class="cat" src="cat.jpg">
+      </div>
+      <div>
+        <img class="cat" src="cat2.jpg">
+      </div>
+      <div>
+        <img class="cat" src="dog.jpg">
+      </div>
+    </div>
+
+    <div class="mid-part">
+      <div class="to-flex">
+        <p class="info">INFO</p>
+        <p class="plus-sign">+</p>
+      </div>
+      <div>
+        <p class="hash"># new-videos</p>
+        <p class="hash">#updates</p>
+        <p class="hash">#faq</p>
+      </div>
+    </div>
+  </body>
+</html>
