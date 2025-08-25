@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .cat{
+        width:40px;
+        height:40px;
+        object-fit:cover;
+        object-position:center;
+        border-radius:24px;
+        margin-top:2px;
+      }
+      .container{
+        display:flex;
+        align-items: flex-start;
+      }
+      .bold-line,.account{
+        font-size:20px;
+      }
+      .bold-line{
+        font-weight:bold;
+      }
+      .account{
+        color:rgb(92, 91, 91);
+      }
+      .content{
+        width:360px;
+      }
+      .heading{
+        margin-top:-10px;
+      }
+      .image-container{
+        margin-right:10px;
+      }
+      .second-line{
+        font-size:18px;
+      }
+      .youtube-link{
+        display:flex;
+        border:1px solid rgb(179, 177, 177);
+        margin-top:10px;
+        border-radius:12px;
+        overflow:hidden;
+      }
+      .grey-part{
+        background-color:rgb(179, 177, 177);
+        width:200px;
+        display:inline-block;
+      }
+      .link{
+        display:flex;
+        flex-direction:column;
+        padding:8px 12px;
+        justify-content:center;
+      }
+      .last-line{
+        font-size:18px;
+        font-weight:bold;
+      }
+      .youtube{
+        color:rgb(70, 70, 70);
+        font-size:18px;
+        padding-top:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img class="cat" src="cat.jpg">
+      </div>
+      <div class="content">
+        <div class="heading">
+          <p><span class="bold-line">supersimple.dev </span><span class="account">@SuperSimpleDev</span></p>
+        </div>
+        <div class="second-line">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+          <div class="youtube-link">
+        <div class="grey-part"></div>
+        <div class="link">
+          <div class="youtube">
+            youtube.com
+          </div>
+          <div class="last-line">Backend web development - a complete overview (2021)</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
