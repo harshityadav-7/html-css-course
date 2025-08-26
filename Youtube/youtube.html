@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--this is title-->
     <title>Youtube.com Clone</title>
+    <!--inks to css files-->
     <link rel="stylesheet" href="styles/video.css"/>
     <link rel="stylesheet" href="styles/header.css"/>
     <link rel="stylesheet" href="styles/general.css"/>
     <link rel="stylesheet" href="styles/sidebar.css"/>
 
+    <!--font connection from google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <!--this is header section of youtube page which will stay fixed at its position-->
     <div class="header">
+      <!--left-section of header part-->
       <div class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg"/>
         <img class="youtube-logo" src="icons/youtube-logo.svg"/>
       </div>
+      <!--middle-section of header part containing search-button, voice-button-->
       <div class="middle-section">
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
@@ -29,6 +35,7 @@
           <div class="tooltip">Search with your voice</div>
         </button>
       </div>
+      <!--right-section of header part containing upload,youtube apps,notifications,account-profile-->
       <div class="right-section">
         <div class="upload-icon-container">
           <img class="upload-icon" src="icons/upload.svg"/>
@@ -50,6 +57,7 @@
       </div>
     </div>
 
+    <!--sidebar containing home,explore,subscriptions,originals,youtube-music,library-->
     <div class="sidebar">
       <div class="sidebar-link">
         <img src="icons/home.svg"/>
@@ -77,8 +85,8 @@
       </div>
     </div>
 
-
-
+    <!--from here we starts video which we made using grid-->
+    <!--First video-->
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
@@ -87,10 +95,22 @@
             </a>
           <div class="video-time">14:20</div>
         </div>
+        <!--info related to video & video creator-->
         <div class="video-info-grid">
+          <!--left part containing profile and related links-->
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/110.jpeg">
+             <a class="channel-link main-container" href="https://www.youtube.com/@MKBHD">
+              <img class="profile-picture" src="creators/110.jpeg"/>
+              <div class="card">
+                <img class="cat-card" src="creators/110.jpeg"/>
+                <div class="details">
+                  <div class="name">Marques Brownlee</div>
+                  <div>20.2M subscribers</div>
+                </div>
+              </div>
+             </a>
           </div>
+          <!--right part consist of two vertically align sub divisions-->
           <div class="video-info">
             <a class="youtube-link" href="https://youtu.be/n2RNcPRtAiY?si=bRdUh-D1jdWNIIZ_">
               <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
@@ -103,6 +123,7 @@
       </div>
 
 
+      <!--Second video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
@@ -112,7 +133,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/120.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/@MKBHD">
+              <img class="profile-picture" src="creators/120.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/120.jpeg"/>
+                <div class="details">
+                  <div class="name">Markiplier</div>
+                  <div>37.7M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
@@ -125,6 +155,8 @@
         </div> 
       </div>
 
+
+      <!--Third video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
@@ -134,7 +166,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/130.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/user/SSSniperWolf">
+              <img class="profile-picture" src="creators/130.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/130.jpeg"/>
+                <div class="details">
+                  <div class="name">SSSniperWolf</div>
+                  <div>35M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
@@ -148,6 +189,7 @@
       </div>
 
 
+      <!--Fourth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg">
@@ -157,7 +199,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/140.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/c/veritasium">
+              <img class="profile-picture" src="creators/140.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/140.jpeg"/>
+                <div class="details">
+                  <div class="name">Veritasium</div>
+                  <div>18.6M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=094y1Z2wpJg">
@@ -171,6 +222,7 @@
       </div>
 
 
+      <!--Fifth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">
@@ -180,7 +232,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/210.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/c/CSDojo">
+              <img class="profile-picture" src="creators/210.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/210.jpeg"/>
+                <div class="details">
+                  <div class="name">CS Dojo</div>
+                  <div>1.95M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=86CQq3pKSUw">
@@ -195,6 +256,7 @@
       </div>
 
 
+      <!--Sixth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
@@ -204,7 +266,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/220.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+              <img class="profile-picture" src="creators/220.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/220.jpeg"/>
+                <div class="details">
+                  <div class="name">MrBeast</div>
+                  <div>425M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
@@ -220,6 +291,7 @@
       </div>
 
 
+      <!--Seventh video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
@@ -229,7 +301,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/230.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+              <img class="profile-picture" src="creators/230.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/230.jpeg"/>
+                <div class="details">
+                  <div class="name">RealLifeLore</div>
+                  <div>7.85M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
@@ -237,7 +318,7 @@
                 Why Planes Don't Fly Over Tibet</p>
             </a>
         
-            <p class="video-author">RealLifeLove</p>
+            <p class="video-author">RealLifeLore</p>
             <p class="video-stats">
               6.6M views &#183; 1 years ago</p>
           </div>
@@ -245,6 +326,7 @@
       </div>
 
 
+      <!--Eighth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=lFm4EM1juls">
@@ -254,7 +336,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/240.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg">
+              <img class="profile-picture" src="creators/240.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/240.jpeg"/>
+                <div class="details">
+                  <div class="name">Tech Vision</div>
+                  <div>844K subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=lFm4EM1juls">
@@ -270,6 +361,7 @@
       </div>
 
 
+      <!--Nineth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
@@ -279,7 +371,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/310.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS">
+              <img class="profile-picture" src="creators/310.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/310.jpeg"/>
+                <div class="details">
+                  <div class="name">THENX</div>
+                  <div>7.84M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=ixmxOlcrlUc">
@@ -295,6 +396,7 @@
       </div>
 
 
+      <!--Tenth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
@@ -304,7 +406,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/320.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/user/businessinsider">
+              <img class="profile-picture" src="creators/320.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/320.jpeg"/>
+                <div class="details">
+                  <div class="name">Business Insider</div>
+                  <div>10.1M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
@@ -320,6 +431,7 @@
       </div>
 
 
+      <!--Eleventh video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=0nZuYyXET3s">
@@ -329,7 +441,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/330.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/c/Destinationtips">
+              <img class="profile-picture" src="creators/330.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/330.jpeg"/>
+                <div class="details">
+                  <div class="name">Destination Tips</div>
+                  <div>282K subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=0nZuYyXET3s">
@@ -345,6 +466,7 @@
       </div>
 
 
+      <!--Twelfth video-->
       <div class="video-preview">
         <div class="thumbnail-row">
           <a class="youtube-link" href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
@@ -354,7 +476,16 @@
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="creators/340.jpeg">
+            <a class="channel-link main-container" href="https://www.youtube.com/teded">
+              <img class="profile-picture" src="creators/340.jpeg">
+              <div class="card">
+                <img class="cat-card" src="creators/340.jpeg"/>
+                <div class="details">
+                  <div class="name">TED-Ed</div>
+                  <div>21.8M subscribers</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="video-info">
             <a class="youtube-link" href="https://www.youtube.com/watch?v=9iMGFqMmUFs">
@@ -369,7 +500,7 @@
         </div> 
       </div>
 
-
+      
     </div>
   </body>
 </html>
