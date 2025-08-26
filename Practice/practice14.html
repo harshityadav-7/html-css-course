@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-container:hover .card{
+        opacity:1;
+        pointer-events:auto;
+        transform:translateY(0);
+      }
+      .cat{
+        margin-left:10px;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        object-fit:center;
+      }
+      .cat-card{
+        margin-left:4px;
+        margin-right:12px;
+        width:70px;
+        height:70px;
+        border-radius:50%;
+        z-index:2;
+      }
+      .name{
+        font-size:20px;
+        color:black;
+        font-weight:bold;
+        font-family:Roboto, Arial;
+      }
+      .subscriber{
+        margin-top:8px;
+        font-weight:bold;
+        font-size:22px;
+        color:rgb(93, 87, 87);
+      }
+      .card{
+        position:absolute;
+        top:55px;
+        left:10px;
+        background-color:rgb(254, 254, 254);
+        border-radius:8px;
+        padding:10px;
+        min-width:180px;
+        max-width:300px;
+        box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+
+        opacity:0;
+        pointer-events:none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
+        display:flex;
+        justify-content:flex-start;
+        margin:10px;
+      }
+      .details{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <html>
+    <div class="main-container">
+      <img class="cat" src="cat.jpg"/>
+      <div class="card">
+        <img class="cat-card" src="cat.jpg"/>
+        <div class="details">
+          <div class="name">Marques Brownlee</div>
+          <div>23M subscribers</div>
+        </div>
+      </div>
+    </div>
+  </html>
+</html>
