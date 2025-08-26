@@ -15,7 +15,9 @@
 
 .profile-picture{
   width:36px;
-  border-radius: 50px;
+  height:36px;
+  object-fit:center;
+  border-radius: 50%;
 }
 .thumbnail-row{
   margin-bottom:10px;
@@ -70,4 +72,68 @@
 }
 .youtube-link:hover{
   opacity:0.90;
+}
+
+
+.main-container:hover .card{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+.cat{
+  margin-left:10px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  object-fit:cover;
+}
+.cat-card{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  object-fit:cover;
+  flex:0 0 48px;
+}
+.name{
+  font-size:20px;
+  color:black;
+  font-weight:700;
+  font-family:Roboto, Arial;
+  white-space:nowrap;
+}
+.subscriber{
+  margin-top:8px;
+  font-weight:bold;
+  font-size:22px;
+  color:rgb(93, 87, 87);
+}
+.card{
+  position:absolute;
+  top:45px;
+  left:0px;
+  background-color:rgb(254, 254, 254);
+  border-radius:8px;
+  padding:10px;
+  min-width:180px;
+  max-width:300px;
+  box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+  z-index:1000;
+
+  opacity:0;
+  pointer-events:none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  display:flex;
+  align-items: center;
+  gap:12px;
+  justify-content:flex-start;
+}
+.details{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.channel-picture{
+  position:relative;
 }
