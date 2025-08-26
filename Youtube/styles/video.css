@@ -30,9 +30,24 @@
 }
 .video-grid {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
   column-gap:16px;
   row-gap:40px;
+}
+@media (min-width:1200px){
+  .video-grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media(max-width:800px){
+  .video-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+@media(max-width:500px){
+  .video-grid{
+    grid-template-columns:repeat(1,1fr);
+  }
 }
 .video-time{
   font-family: Roboto, Arial;
@@ -48,4 +63,11 @@
   padding-top:4px;
   padding-bottom:4px;
   border-radius:2px;
+}
+.youtube-link{
+  text-decoration:none;
+  color:inherit;
+}
+.youtube-link:hover{
+  opacity:0.90;
 }
