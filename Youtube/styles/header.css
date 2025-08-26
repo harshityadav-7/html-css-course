@@ -53,6 +53,27 @@
   border:1px rgb(240, 240, 240) solid;
   margin-left:-1px;
   margin-right:10px;
+  position:relative;
+}
+.search-button .tooltip{
+  position:absolute;
+  background-color:gray;
+  color:white;
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:8px;
+  padding-right:8px;
+  border-radius:2px;
+  font-size:12px;
+  bottom:-30px;
+  opacity:0;
+  transition:opacity 0.2s;
+  cursor:pointer;
+  pointer-events:none;
+
+}
+.search-button:hover .tooltip{
+  opacity:1;
 }
 
 .search-icon{
